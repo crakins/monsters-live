@@ -1,11 +1,11 @@
+/* eslint-disable no-template-curly-in-string */
 import React from 'react';
 import './card.styles.css'
 
-export const Card = (props) => (
+export const Card = props => (
     <div className='card-container'>
-        <img alt="monster" src={'https://robohash.org/${props.monster.id}set=set3?size=180x180'} /> 
+        <img className='card-container-img' alt="monster" src={`https://robohash.org/${props.monster.id}?set=set2&size=180x180`} width='180' height='180' /> 
         <h2> {props.monster.name} </h2>
         <p> {props.monster.email} </p>
-        <p> {props.monster.id} </p>
     </div>
 )
