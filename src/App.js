@@ -15,7 +15,7 @@ class App extends Component {
 
 // lifecycle methods
 componentDidMount() {
-  fetch('http://jsonplaceholder.typicode.com/users')
+  fetch('https://jsonplaceholder.typicode.com/users')
   .then(response => response.json())
   .then(users => this.setState({ monsters: users }));
 }
